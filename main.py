@@ -32,7 +32,7 @@ def send_text(message):
                 po_markup = telebot.types.ReplyKeyboardMarkup(True)
                 po_markup.row('Ortga qaytish')
                 if message.text == '🚍Buyurtma berish':
-                    bot.send_message(message.chat.id, "Mahsulotga buyurtma berish uchun iltimos biz bilan bog'laning >>>  +998 93 035 10 11", reply_markup = po_markup) 
+                    bot.send_message(message.chat.id, "Mahsulotga buyurtma berish uchun iltimos biz bilan bog'laning >>>  @Shifosuvuz", reply_markup = po_markup) 
                 elif message.text == 'Ortga qaytish':
                     bot.send_message(message.chat.id, 'Mahsulotni tanlang', reply_markup = product_markup)
 
@@ -47,7 +47,7 @@ def send_text(message):
                 order_markup = telebot.types.ReplyKeyboardMarkup(True)
                 order_markup.row('◀️Ortga qaytish')
                 if message.text == '🚖Buyurtma berish':
-                    bot.send_message(message.chat.id, "Mahsulotga buyurtma berish uchun iltimos biz bilan bog'laning >>> +998 93 035 10 11", reply_markup = order_markup) 
+                    bot.send_message(message.chat.id, "Mahsulotga buyurtma berish uchun iltimos biz bilan bog'laning >>> @Shifosuvuz", reply_markup = order_markup) 
                 elif message.text == '◀️Ortga qaytish':
                     bot.send_message(message.chat.id, 'Mahsulotni tanlang', reply_markup = product_markup)
             elif message.text == 'Bosh menyu':
@@ -57,7 +57,7 @@ def send_text(message):
             bot.send_message(message.chat.id, 'Bosh menyu', reply_markup = markup)
 
     if message.text == '📞 Biz bilan bog`lanish':
-        bot.send_message(message.chat.id, 'Kontaktlar:\n+998 93 035 10 11\n+998 99 285 10 11\n\nSizga yordam berishdan doim mamnunmiz)', reply_markup = markup)
+        bot.send_message(message.chat.id, 'Kontaktlar:\n+998930351011\n+998992851011\n\nSizga yordam berishdan doim mamnunmiz)', reply_markup = markup)
 
     if message.text == '📢 Bizni kuzatib boring':
         bot.send_message(message.chat.id, 'Instagram: shifosuv\nFacebook: shifosuv uz\nWebsite: shifosuv.uz', reply_markup = markup)
