@@ -1,7 +1,7 @@
 import telebot 
 from telebot import types 
 
-bot = telebot.TeleBot('5322220961:AAHuPg46q7v9hmBGA9DEnrOIOSJn8o0jlJo')
+bot = telebot.TeleBot('token')
 BOT_URL = 'https://shifosuv.herokuapp.com/'
 
 markup = telebot.types.ReplyKeyboardMarkup(True)
